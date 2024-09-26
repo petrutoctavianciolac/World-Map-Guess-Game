@@ -59,7 +59,8 @@ To run the game locally, you'll need a modern web browser. No additional softwar
 3. **Highlight the Country**: If your guess is correct, the country will be highlighted on the map.
 4. **Track Your Score**: The number of countries you've correctly identified is displayed on the screen.
 5. **Timer**: Initially given 15 minutes and when the time pass the game is over.
-6. **View Rankings**: After finishing the game, you can view the `Ranking` page to see the top scores saved in your browser.
+6. **Save**: After 15 minutes or 197 countries guessed a window will appear and ask for your name to save you in ranking.
+7. **View Rankings**: After finishing the game, you can view the `Ranking` page to see the top scores saved in your browser.
 
 ## Ranking System
 
