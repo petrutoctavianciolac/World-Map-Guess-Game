@@ -43,16 +43,18 @@ To run the game locally, you'll need a modern web browser. No additional softwar
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/world-map-guessing-game.git
+    git clone https://github.com/petrutoctavianciolac/World-Map-Guess-Game.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd world-map-guessing-game
+    cd World-Map-Guessing-Game
     ```
 
 3. Open `index.html` in your web browser to start playing the game.
+
+4. Or just enter on the game website: 
 
 ## Gameplay Instructions
 
