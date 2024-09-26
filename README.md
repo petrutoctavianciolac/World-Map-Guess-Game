@@ -38,7 +38,7 @@ The World Map Guessing Game tests your knowledge of global geography. As you gue
 
 To run the game locally, you'll need a modern web browser. No additional software or dependencies are required.
 
-### Installation
+### Playing
 
 1. Clone the repository to your local machine:
 
@@ -46,11 +46,7 @@ To run the game locally, you'll need a modern web browser. No additional softwar
     git clone https://github.com/petrutoctavianciolac/World-Map-Guess-Game.git
     ```
 
-2. Navigate to the project directory:
-
-    ```bash
-    cd World-Map-Guessing-Game
-    ```
+2. Navigate to the project directory.
 
 3. Open `index.html` in your web browser to start playing the game.
 
