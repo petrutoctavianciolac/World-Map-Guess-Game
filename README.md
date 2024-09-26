@@ -50,7 +50,7 @@ To run the game locally, you'll need a modern web browser. No additional softwar
 
 3. Open `index.html` in your web browser to start playing the game.
 
-4. Or just enter on the game website: 
+4. Or just enter on the game website: https://petrutoctavianciolac.github.io/World-Map-Guess-Game/
 
 ## Gameplay Instructions
 
