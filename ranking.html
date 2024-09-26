@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Map Game
+        </title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <ul>
+            <li><a href="index.html">Game</a></li>
+        </ul>
+
+        <h1>Ranking</h1>
+        <ul id="scoreboard"></ul>
+        
+        <table id="ranking">
+            
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Time</th>
+            </tr>
+
+        </table>
+
+        <script>
+
+            scoreboard = JSON.parse(localStorage.getItem('scoreboard'));
+            
+            for(let i = 0; i < scoreboard.length - 1; i++) 
+                for(let j = i + 1; j < scoreboard.length; j++)
+                    if(scoreboard[i].score < scoreboard[j].score)
+                    {
+                        let aux = scoreboard[i];
+                        scoreboard[i] = scoreboard[j];
+                        scoreboard[j] = aux;
+                    }
+                    else if(scoreboard[i].score == scoreboard[j].score)
+                            if(scoreboard[i].time > scoreboard[j].time)
+                            {
+                                let aux = scoreboard[i];
+                                scoreboard[i] = scoreboard[j];
+                                scoreboard[j] = aux;
+                            }
+            
+            while(scoreboard.length > 10)   scoreboard.pop();
+
+
+            let table = document.getElementById('ranking');
+            let tr = "";
+
+            scoreboard.forEach(score => {
+                
+                let minutes = Math.floor(score.time / 60);
+                let seconds = score.time % 60;
+
+                if(seconds < 10) seconds = '0' + seconds;
+                if(minutes < 10) minutes = '0' + minutes;
+
+                tr = `<tr><td>${score.name}</td><td>${score.score}</td><td>${minutes}:${seconds}</td></tr>`;
+                table.innerHTML += tr;
+            });
+            
+
+        </script>
+
+    </body>
+
+</html>
